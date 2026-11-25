@@ -5,6 +5,11 @@ class Storysquish < Formula
   sha256 "f71296b35894e3e5a68fbaa43ba5a5193b52a8651b8590c4c6208bc454740147"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/meslab/homebrew-tap/releases/download/storysquish-0.2.2"
+    sha256 cellar: :any, x86_64_linux: "683faff184c4e33289807b133308a2a27cfdd0ef9b9491555fd182921a6731e1"
+  end
+
   depends_on "rust" => :build
   depends_on :linux
 
