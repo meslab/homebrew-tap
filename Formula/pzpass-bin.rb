@@ -8,6 +8,12 @@ class PzpassBin < Formula
     strategy :github_latest
   end
 
+  bottle do
+    root_url "https://github.com/meslab/homebrew-tap/releases/download/pzpass-bin-1.0.0"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "6a943d91c985515816a10234056cef92eaf62ba133bf95ab558c3ce799be91b1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "5ae0340de7b2e8b47581d120e246cf8a154c2471a178b4d1e4db560c26e1e98f"
+  end
+
   on_macos do
     depends_on arch: :arm64
 
