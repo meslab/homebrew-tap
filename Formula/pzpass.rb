@@ -1,7 +1,6 @@
 class Pzpass < Formula
   desc "Password generator and encrypted password vault"
   homepage "https://github.com/pzpass/pzpass"
-  version "1.0.0"
   license "MIT"
 
   livecheck do
