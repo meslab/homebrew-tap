@@ -15,6 +15,11 @@ class Pzpass < Formula
       url "https://github.com/pzpass/pzpass/releases/download/v1.0.0/pzp-v1.0.0-aarch64-macos.tar.gz"
       sha256 "15a5587816b4fabe01b2b691f2d50edf871d4197128c0ab2b67f1d4b89404156"
     end
+    # Intel Macs are refused by `depends_on arch:`, but the formula must still define a URL to load there.
+    on_intel do
+      url "https://github.com/pzpass/pzpass/releases/download/v1.0.0/pzp-v1.0.0-aarch64-macos.tar.gz"
+      sha256 "15a5587816b4fabe01b2b691f2d50edf871d4197128c0ab2b67f1d4b89404156"
+    end
   end
 
   on_linux do
