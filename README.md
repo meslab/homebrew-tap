@@ -25,10 +25,11 @@ brew "meslab/tap/<formula>", trusted: true
 cask "meslab/tap/<cask>", trusted: true
 ```
 
-## Available casks
+## Available packages
 
 - [`storysquish`](https://story-squish.github.io/storysquish/): scene board
-  for planning and drafting novels.
+  for planning and drafting novels. A cask on macOS and a formula built from
+  source on Linux, so use `--cask` or `--formula` with its short name.
 
 ## Documentation
 
