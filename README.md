@@ -31,6 +31,9 @@ cask "meslab/tap/<cask>", trusted: true
   for planning and drafting novels. A cask on macOS and a formula built from
   source on Linux, so use `--cask` or `--formula` with its short name.
 
+- [`pzpass`](https://github.com/pzpass/pzpass): password generator and
+  encrypted password vault. A formula built from source; installs `pzp`.
+
 ## Documentation
 
 `brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
