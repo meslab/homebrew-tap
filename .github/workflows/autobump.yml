@@ -35,7 +35,7 @@ jobs:
         id: bump_token
         uses: actions/create-github-app-token@f418cff399f7aef4c2f0ad47e25ca7a6abbdd6fc # v3.4.0
         with:
-          client-id: ${{ vars.TAP_PUBLISHER_CLIENT_ID }}
+          client-id: ${{ secrets.TAP_PUBLISHER_CLIENT_ID }}
           private-key: ${{ secrets.TAP_PUBLISHER_PRIVATE_KEY }}
           permission-contents: write
           permission-pull-requests: write
