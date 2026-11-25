@@ -7,6 +7,11 @@ cask "storysquish" do
   desc "Scene board for planning and drafting novels"
   homepage "https://story-squish.github.io/storysquish/"
 
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
+
   depends_on :macos
 
   pkg "StorySquish-v#{version}-macos-universal.pkg"
