@@ -33,8 +33,6 @@ cask "meslab/tap/<cask>", trusted: true
 
 - [`pzpass`](https://github.com/pzpass/pzpass): password generator and
   encrypted password vault, built from source with Zig; installs `pzp`.
-  `pzpass-bin` installs the prebuilt release binaries instead (macOS arm64,
-  Linux x86_64/arm64); the two conflict, so install only one.
 
 ## Documentation
 
