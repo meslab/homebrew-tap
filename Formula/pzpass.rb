@@ -5,6 +5,11 @@ class Pzpass < Formula
   sha256 "d94dfaf6b34722498d3135759bbc98dd5c01243a602ac12f8ff8a3ada67ca6b7"
   license "MIT"
 
+  livecheck do
+    url :stable
+    strategy :github_latest
+  end
+
   depends_on "zig" => :build
 
   def install
