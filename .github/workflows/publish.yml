@@ -30,8 +30,6 @@ jobs:
     steps:
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@61b401267256bb9c047d6d1481b176d5772a0ba7 # 2026.11.23.1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up git
         id: git_setup
@@ -59,7 +57,16 @@ jobs:
         with:
           subject-path: "${{ steps.pull_bottles.outputs.bottle_path }}/*.tar.gz"
 
+      - name: Generate push token
+        id: push_token
+        uses: actions/create-github-app-token@f418cff399f7aef4c2f0ad47e25ca7a6abbdd6fc # v3.4.0
+        with:
+          client-id: ${{ vars.TAP_PUBLISHER_CLIENT_ID }}
+          private-key: ${{ secrets.TAP_PUBLISHER_PRIVATE_KEY }}
+          permission-contents: write
+
       - name: Push commits
         uses: Homebrew/actions/git-try-push@61b401267256bb9c047d6d1481b176d5772a0ba7 # 2026.11.23.1
         with:
+          token: ${{ steps.push_token.outputs.token }}
           branch: main
