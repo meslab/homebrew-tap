@@ -10,6 +10,13 @@ class Pzpass < Formula
     strategy :github_latest
   end
 
+  bottle do
+    root_url "https://github.com/meslab/homebrew-tap/releases/download/pzpass-1.0.1"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "274a6e235441577150b401880628fffe7b1dc4e4e35c1b203113a2e1cbf8d53c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "c746ce416e88ce2d64b4f2759beb3f0c5a5d39aaad16312a9f4e8214380f43cd"
+  end
+
   depends_on "zig" => :build
 
   def install
