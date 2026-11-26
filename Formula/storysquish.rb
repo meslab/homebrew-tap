@@ -1,8 +1,8 @@
 class Storysquish < Formula
   desc "Scene board for planning and drafting novels"
   homepage "https://story-squish.github.io/storysquish/"
-  url "https://github.com/story-squish/storysquish/archive/refs/tags/v0.3.1.tar.gz"
-  sha256 "761a1d13d598c96690ae4d69d5cff85bfaf074d150943c3684829e9886aec027"
+  url "https://github.com/story-squish/storysquish/archive/refs/tags/v0.3.2.tar.gz"
+  sha256 "123533986afeaa2aff7d2398c11944d297957db71cabd94174d8875ca9a8b065"
   license "MIT"
 
   depends_on "rust" => :build
