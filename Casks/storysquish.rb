@@ -1,6 +1,6 @@
 cask "storysquish" do
-  version "0.2.2"
-  sha256 "63166525cff27aa881c1cd7fc53ee732753c93c19e52402be930849c53965d7f"
+  version "0.3.0"
+  sha256 "96e9de184f8f0f1768480fae4864255e15a0d2ea9ea8effdeef73d2909d49c25"
 
   url "https://github.com/story-squish/storysquish/releases/download/v#{version}/StorySquish-v#{version}-macos-universal.pkg"
   name "StorySquish"
