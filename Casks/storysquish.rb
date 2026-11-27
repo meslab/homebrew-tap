@@ -19,6 +19,7 @@ cask "storysquish" do
   uninstall pkgutil: "io.github.storysquish"
 
   zap trash: [
+    "~/.config/storysquish",
     "~/Library/Application Support/storysquish",
     "~/Library/Preferences/io.github.storysquish.plist",
   ]
